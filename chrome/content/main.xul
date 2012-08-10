@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://woggplayer/content/style.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://branding/locale/brand.dtd">
+
+<window id="player" title="WoggPlayer" width="640" height="360" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+
+<script type="application/x-javascript" src="chrome://woggplayer/content/main.js"/>
+
+  <popupset>
+    <menupopup id="rightclick">
+   <menuitem label="&open.menuitem;" key="open" oncommand="selection();"/>
+<menuitem label="&openurl.menuitem;" key="openurl" oncommand="openurl();" />
+<menuseparator/>
+<menuitem label="&playpause.menuitem;" key="playpause" oncommand="playpause();" />
+<menu label="&volume.menu;">
+<menupopup>
+<menuitem label="&increasevolume.menuitem;" key="increasevolume" oncommand="increasevolume();" />
+<menuitem label="&decreasevolume.menuitem;" key="decreasevolume" oncommand="decreasevolume();" />
+<menuitem label="&mute.menuitem;" key="mute" oncommand="mute();" />
+</menupopup>
+</menu>
+<menuitem label="&fullscreen.menuitem;" key="fullscreen" oncommand="fullscreen();" />
+    </menupopup>
+  </popupset>
+
+<keyset>
+<key id="fullscreen" keycode="VK_F11" oncommand="fullscreen();"/>
+<key id="open" modifiers="control" key="O" oncommand="selection();"/>
+<key id="openurl" modifiers="control" key="U" oncommand="openurl();"/>
+<key id="playpause" modifiers="control" key="P" oncommand="playpause();"/>
+<key id="mute" keycode="VK_F7" oncommand="mute();"/>
+<key id="increasevolume" keycode="VK_F9" oncommand="increasevolume();"/>
+<key id="decreasevolume" keycode="VK_F8" oncommand="decreasevolume();"/>
+</keyset>
+
+<menubar>
+<menu label="&file.menu;" id="file">
+<menupopup>
+   <menuitem label="&open.menuitem;" key="open" oncommand="selection();"/>
+<menuitem label="&openurl.menuitem;" key="openurl" oncommand="openurl();" />
+</menupopup>
+</menu>
+<menu label="&video.menu;" id="video">
+<menupopup>
+<menuitem label="&playpause.menuitem;" key="playpause" oncommand="playpause();" />
+<menu label="&volume.menu;">
+<menupopup>
+<menuitem label="&increasevolume.menuitem;" key="increasevolume" oncommand="increasevolume();" />
+<menuitem label="&decreasevolume.menuitem;" key="decreasevolume" oncommand="decreasevolume();" />
+<menuitem label="&mute.menuitem;" key="mute" oncommand="mute();" />
+</menupopup>
+</menu>
+<menuitem label="&fullscreen.menuitem;" key="fullscreen" oncommand="fullscreen();" />
+</menupopup>
+</menu>
+</menubar>
+
+<box id="mybox" context="rightclick">
+<html:video controls="controls" autoplay="autoplay" style="-moz-box-flex: 1; max-height: 100%; min-height: 0%; max-width: 100%; min-width: 0%;" id="myvideo" />
+</box>
+</window>

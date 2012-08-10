@@ -1,0 +1,14 @@
+<!ENTITY brandShortName "WoggPlayer">
+<!ENTITY brandFullName "WoggPlayer">
+<!ENTITY vendorShortName "WoggPlayer">
+<!ENTITY open.menuitem "Abrir">
+<!ENTITY openurl.menuitem "Abrir de um URL">
+<!ENTITY playpause.menuitem "Executar/Pausar">
+<!ENTITY increasevolume.menuitem "Aumentar">
+<!ENTITY decreasevolume.menuitem "Diminuir">
+<!ENTITY mute.menuitem "Sem Som">
+<!ENTITY fullscreen.menuitem "Fullscreen">
+<!ENTITY file.menu "Arquivo">
+<!ENTITY video.menu "V&#237;deo">
+<!ENTITY volume.menu "Volume">
+<!ENTITY ok.button "Ok">

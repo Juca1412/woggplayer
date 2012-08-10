@@ -1,0 +1,1 @@
+Put the "xulrunner" executable from XUL.Framework/Versions/14.0.1/xulrunner here.

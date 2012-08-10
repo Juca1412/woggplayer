@@ -1,0 +1,1 @@
+Put the content from XUL.framework/Versions/14.0.1/... here.

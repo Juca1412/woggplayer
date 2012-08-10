@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://woggplayer/content/style.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://branding/locale/brand.dtd">
+
+<window id="url" title="WoggPlayer" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    onload="initBrowser()">
+
+<script type="application/x-javascript" src="chrome://woggplayer/content/main.js"/>
+
+<textbox id="urlbar" name="urlbar" size="50%" />
+<button id="cancel" label="&cancel.button;" oncommand="window.close();" />
+<button id="ok" label="&ok.button;" oncommand="url();" />
+
+</window>

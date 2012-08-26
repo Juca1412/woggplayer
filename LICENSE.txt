@@ -1,2 +1,32 @@
-WoggPlayer's Source Code is subject to the terms of the Mozilla Public
-License, v. 2.0. You can obtain a copy at http://mozilla.org/MPL/2.0/.
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description
+    about="urn:mozilla:install-manifest"
+
+    em:name="Go to Top"
+    em:description="Adds a "go to top" toolbar button."
+
+    em:id="{fc2a3d70-e4d1-11e1-aff1-0800200c9a66}"
+    em:version="1.0"
+
+    em:iconURL="chrome://custombutton/content/icon.png" >
+
+    <em:targetApplication><!-- Firefox -->
+      <Description
+        em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+        em:minVersion="1.4"
+        em:maxVersion="99" />
+    </em:targetApplication>
+
+    <em:file>
+      <Description
+        about="urn:mozilla:extension:gototop"
+        em:package="content/gototop/" />
+    </em:file>
+
+  </Description>
+
+</RDF>

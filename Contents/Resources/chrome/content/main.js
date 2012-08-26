@@ -55,7 +55,7 @@ video.muted = !video.muted;
 function openurl()
 {
 var win = window.open("chrome://woggplayer/content/url.xul", 
-                      "aboutMyExtension", "chrome,alwaysRaised=yes,dependent=yes,dialog=yes,modal=yes,centerscreen"); 
+                      "aboutMyExtension", "chrome,alwaysRaised=yes,dependent=yes,dialog=yes,modal=yes,fullscreenbutton=yes,centerscreen"); 
 }
 
 function url() {
